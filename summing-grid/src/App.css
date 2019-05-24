@@ -1,18 +1,60 @@
+html, body, div, p, main{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: #404040;
+  font-family: sans-serif;
+}
+
 .App {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+.App > p {
+  background-color: #036;
+  color: #f63;
+  padding: 10px;
+  font-size: 20px;
   text-align: center;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.App > input[type='number'], input[type='number']::placeholder {
+  background-color: #f63;
+  color: #036;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px;
+  width: auto;
 }
 
-.App-title {
-  font-size: 1.5em;
+input[type='number']::placeholder {
+  text-align: center;
 }
 
-.App-intro {
-  font-size: large;
+@media (max-width: 719px) {
+  .App {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(130px, 1fr));
+  }
+}
+
+@media (max-width: 359px) {
+  .App {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }

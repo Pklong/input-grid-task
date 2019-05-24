@@ -1,30 +1,17 @@
-## Setup
-
-**You may fork these repo or download a local copy.**
+## [Live](https://summing-grid.netlify.com/)
 
 ### With React
-
-If you'd like to use React, this repo is set up with `create-react-app`.
 
 1. Fork or download a local copy of this repo.
 2. Run `yarn` in the repo root.
 3. `cd` into `summing-grid` and run `yarn` to install dependencies.
-4. Run scrips from `summing-grid/package.json` to test or run your application.
-
-### With your own framework
-
-You may use a framework of your choice to complete this task.
-The root `package.json` in this repo can be adjusted to install whatever dependencies you need.
+4. Run scripts from `summing-grid/package.json` to test or run the application.
 
 ## Submission
 
 ### For github forks
 
 Commit and push your code to your forked repo. Open a pull request against this repo and let us know.
-
-### For downloads
-
-Send a zip file of your completed exercise to your contact at CB Insights.
 
 ----
 
